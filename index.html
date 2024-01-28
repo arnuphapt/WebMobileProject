@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Grid Demo</title>
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
     <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
 
@@ -35,6 +35,7 @@
       <button id="video-permission-button">Allow VR video</button>
     </div>
 
+  
     <a-scene fog="type: linear; near:12; far:20; color: #dbdedb;"><!--Night mode: #0c192a-->
 
       <a-assets>
@@ -49,16 +50,18 @@
         <img src="assets/white_grid_thin.png" id="grid" crossorigin="anonymous">
         <video id="video-src" src="assets/interstellar.mp4"></video>
       </a-assets>
-
+      
       <!-- CURSOR -->
       <a-entity position="0 1.8 0">
-        <a-entity camera look-controls mouse-cursor>
+        <a-entity camera look-controls wasd-controls mouse-cursor>
           <a-cursor fuse="true" timeout="500" color="#F0F0F0" scale="0.6 0.6 0.6">
           </a-cursor>
         </a-entity>
       </a-entity>
+      
+      
       <!-- END CURSOR -->
-
+      
       <!-- MEDIAS HOLDER -->
       <a-sound id="alert-sound" src="src: url(assets/action.wav)" autoplay="false" position="0 0 0"></a-sound>
       <a-video id="video-screen" src="#video-src" position="0 4.5 -14" width="16" height="9"></a-video>
@@ -137,5 +140,6 @@
         }
       });
     </script>
+      
   </body>
 </html>
