@@ -42,11 +42,6 @@
   <a-scene>
     <a-light position="0 5 0" type="directional" intensity="0.5" cast-shadow="true"></a-light>
     <a-light position="0 0 10" type="directional" intensity="0.75" cast-shadow="true"></a-light>
-    <a-video src="assets/ทีเร๊ก.mp4" position="0.9 1 -10" width="2" height="1" loop muted></a-video>
-    <a-video src="assets/สไปโน.mp4" position="-5 1 -10" width="2" height="1" loop muted></a-video>
-    <a-video src="assets/pter.mp4" position="-11 1 -10" width="2" height="1" loop muted></a-video>
-    <a-video src="assets/-เขา.mp4" position="6 1 -10" width="2" height="1" loop muted></a-video>
-    <a-video src="assets/แร็ปเตอร์.mp4" position="11 1 -10" width="2" height="1" loop muted></a-video>
 
     <!-- สร้างพื้นหลังสีเทา -->
     <a-box position="0 0 -5" width="60" height="1" depth="60" color="#212529"></a-box>
@@ -59,7 +54,7 @@
     <a-box position="-5 0 -14" width="3" height="1.5" depth="6" color="#495057"></a-box>
     <!-- ฐานT-rex -->
     <a-box position="1 0 -14" width="3" height="1.5" depth="6" color="#495057"></a-box>
-     <!-- ฐานTri-->
+    <!-- ฐานTri-->
     <a-box position="6 0 -14" width="3" height="1.5" depth="6" color="#495057"></a-box>
     <!-- ฐานRaptor-->
     <a-box position="11 0 -14" width="3" height="1.5" depth="6" color="#495057"></a-box>
@@ -71,13 +66,19 @@
     <a-box position="15 2 0" width="1" height="4" depth="50" color="#343a40"></a-box>
     <a-box position="0 2 15" width="50" height="4" depth="1" color="#343a40"></a-box>
     <a-box position="0 2 -15" width="50" height="4" depth="1" color="#343a40"></a-box>
-    <a-box position="0 0 -5" width="60" height="1" depth="60" color="#495057" src="assets/img/Wood_023_ambientOcclusion.jpg" repeat="50 50" ></a-box>
+    <a-box position="0 0 -5" width="60" height="1" depth="60" color="#495057"
+      src="assets/img/Wood_023_ambientOcclusion.jpg" repeat="50 50"></a-box>
+
 
     <!-- กำแพงล้อมรอบห้อง -->
-    <a-box position="-15 2 0" width="1" height="4" depth="50" color="#999999	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
-    <a-box position="15 2 0" width="1" height="4" depth="50" color="#999999	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
-    <a-box position="0 2 15" width="50" height="4" depth="1" color="#999999	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
-    <a-box position="0 2 -15" width="50" height="4" depth="1" color="#999999	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
+    <a-box position="-15 2 0" width="1" height="4" depth="50" color="#999999	" src="assets/img/Brick_Wall_015_DISP.png"
+      repeat="15"></a-box>
+    <a-box position="15 2 0" width="1" height="4" depth="50" color="#999999	" src="assets/img/Brick_Wall_015_DISP.png"
+      repeat="15"></a-box>
+    <a-box position="0 2 15" width="50" height="4" depth="1" color="#999999	" src="assets/img/Brick_Wall_015_DISP.png"
+      repeat="15"></a-box>
+    <a-box position="0 2 -15" width="50" height="4" depth="1" color="#999999	" src="assets/img/Brick_Wall_015_DISP.png"
+      repeat="15"></a-box>
 
 
     <a-assets>
@@ -90,7 +91,7 @@
 
     <a-assets>
       <img src="assets/white_grid_thin.png" id="grid" crossorigin="anonymous">
-      <video id="video-src" src="assets/ไดโนเสาร์.mp4"></video>
+      <video id="video-src" src="assets/Aquatic Clan Reptile - Dinomaster.mp4"></video>
     </a-assets>
 
     <!-- CURSOR -->
@@ -99,69 +100,82 @@
         <a-cursor fuse="true" timeout="500" color="#F0F0F0" scale="0.6 0.6 0.6">
         </a-cursor>
       </a-entity>
-      
-      
+
+
       <!-- END CURSOR -->
-      
+
       <!-- MEDIAS HOLDER -->
       <a-sound id="alert-sound" src="src: url(assets/action.wav)" autoplay="false" position="0 0 0"></a-sound>
       <a-video id="video-screen" src="#video-src" position="2 -0.5 0" width="2" height="1" rotation="0 -20 0"></a-video>
       <!-- END MEDIAS HOLDER -->
       <!-- CONTROLS -->
       <a-image id="control-back" width="0.4" height="0.4" src="#seek-back" position="-0.8 0.6 -6" visible="false"
-      scale="0.85 0.85 0.85"></a-image>
+        scale="0.85 0.85 0.85"></a-image>
       <a-image id="control-play" width="0.4" height="0.4" src="#play" position="2 -0.5 0" rotation="0 160 0"></a-image>
       <a-image id="control-volume" width="0.4" height="0.4" src="#volume-normal" position="0.8 0.6 -6" visible="false"
-      scale="0.75 0.75 0.75"></a-image>
+        scale="0.75 0.75 0.75"></a-image>
       <!-- END CONTROLS -->
 
-<!--Modelปีเตอร์โนดอย-->
-    <a-entity id="dino" gltf-model="assets/model/source/Pteradactal.glb" scale="1 1 1 " position="-11 0 -13"
-      rotation="100 100 100">
-    </a-entity>
-<!--Modelทีเร๊ก-->
-    <a-entity id="dino2" gltf-model="assets/model/source/dinosaur_fbx.glb" scale="4 4 4 " position="-0.1 0 -14"
-      rotation="0 30 0">
-    </a-entity>
-<!--Modelสไปโน-->
-    <a-entity id="dino3" gltf-model="assets/model/source/spinosaurus.glb" scale="0.5 0.5 0.5 " position="-5 -1 -12.3"
-    rotation="0 30 0">
-  </a-entity>
+      <!--Modelปีเตอร์โนดอย-->
+      <a-entity id="dino" gltf-model="assets/model/source/Pteradactal.glb" scale="1 1 1 " position="-11 0 -13"
+        rotation="100 100 100">
+      </a-entity>
 
-<!--Modelสไปโน-->
-<a-entity id="dino4" gltf-model="assets/model/source/velociraptor.glb" scale="1 1 1 " position="11 -0.9 -12"
-rotation="0 0 0">
-</a-entity>
+      <!--Modelตกเเต่ง1 ฟันไดโนเสาร์-->
+      <a-entity id="dino" gltf-model="assets/model/source/dino_spine_toy_-_park_antropos.glb" scale="1 1 1 "
+        position="0 0 0" rotation="150 200 100">
+      </a-entity>
 
-<!--Modelดูก-->
-<a-entity id="dino5" gltf-model="assets/model/source/tylosaurus_skeleton_high_poly_count.glb" scale="0.3 0.3 0.3" position="0 -0.5 0"
-rotation="0 0 0">
-</a-entity>
-  
-<!--Modelท็อป-->
-<a-entity id="dino5" gltf-model="assets/model/source/triceratops.glb" scale="0.7 0.7 0.7" position="6 -1 -13"
-rotation="0 0 0">
-</a-entity>
+      <!--Modelตกเเต่ง2 ผู้ชาย-->
+      <a-entity id="dino" gltf-model="assets/model/source/dino_ignacio.glb" scale="0.2 0.2 0.2 "
+        position="0 0 0" rotation="0 0 0">
+      </a-entity>
 
-    <!-- PROGRESSBAR -->
-    <a-entity id="progress-bar" geometry="primitive: plane; width: 4; height: 0.06;"
-      material="transparent: true; visible:false; opacity: 0;" position="0 0.1 -6">
-      <a-plane id="progress-bar-track" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2"
-        visible="false"></a-plane>
-      <a-plane id="progress-bar-fill" width="0" height="0.06" color="#7198e5" position="-2 0 0.01"
-        visible="false"></a-plane>
-      </a-plane>
-      <!-- END PROGRESSBAR -->
+      <!--Modelทีเร๊ก-->
+      <a-entity id="dino2" gltf-model="assets/model/source/dinosaur_fbx.glb" scale="4 4 4 " position="-0.1 0 -14"
+        rotation="0 30 0">
+      </a-entity>
 
-     
       
+      <!--Modelสไปโน-->
+      <a-entity id="dino3" gltf-model="assets/model/source/spinosaurus.glb" scale="0.5 0.5 0.5 " position="-5 -1 -12.3"
+        rotation="0 30 0">
+      </a-entity>
 
-      <!-- ENVIRONMENT -->
-      <a-entity geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true; opacity:0.3;"></a-entity>
-      <a-sky color="#dbdedb"></a-sky>
-      <a-entity light="color: #FFF; intensity: 1; type: ambient;"></a-entity>
-      <!-- END ENVIRONMENT -->
+      <!--Modelสไปโน-->
+      <a-entity id="dino4" gltf-model="assets/model/source/velociraptor.glb" scale="1 1 1 " position="11 -0.9 -12"
+        rotation="0 0 0">
+      </a-entity>
+
+      <!--Modelดูก-->
+      <a-entity id="dino5" gltf-model="assets/model/source/tylosaurus_skeleton_high_poly_count.glb" scale="0.3 0.3 0.3"
+        position="0 -0.5 0" rotation="0 0 0">
+      </a-entity>
+
+      <!--Modelท็อป-->
+      <a-entity id="dino5" gltf-model="assets/model/source/triceratops.glb" scale="0.6 0.6 0.6" position="6 -1 -13"
+        rotation="0 0 0">
+      </a-entity>
+
+      <!-- PROGRESSBAR -->
+      <a-entity id="progress-bar" geometry="primitive: plane; width: 4; height: 0.06;"
+        material="transparent: true; visible:false; opacity: 0;" position="0 0.1 -6">
+        <a-plane id="progress-bar-track" width="4" height="0.06" color="black" position="0 0 0.005" opacity="0.2"
+          visible="false"></a-plane>
+        <a-plane id="progress-bar-fill" width="0" height="0.06" color="#7198e5" position="-2 0 0.01"
+          visible="false"></a-plane>
+        </a-plane>
+        <!-- END PROGRESSBAR -->
+
+
+
+
+        <!-- ENVIRONMENT -->
+        <a-entity geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+          material="src: #grid; repeat: 10000 10000; transparent: true; opacity:0.3;"></a-entity>
+        <a-sky color="#dbdedb"></a-sky>
+        <a-entity light="color: #FFF; intensity: 1; type: ambient;"></a-entity>
+        <!-- END ENVIRONMENT -->
   </a-scene>
 
   <script src="js/AVideoPlayer.js"></script>
