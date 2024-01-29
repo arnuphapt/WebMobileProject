@@ -36,7 +36,25 @@
     </div>
 
   
-    <a-scene fog="type: linear; near:12; far:20; color: #dbdedb;"><!--Night mode: #0c192a-->
+    <a-scene>
+      <!-- สร้างพื้นหลังสีเทา -->
+      <a-box position="0 0 -5" width="10" height="1" depth="10" color="#888"></a-box>
+
+      <!-- สร้างห้องสี่เหลี่ยมใหญ่ -->
+      <a-box position="0 2 -5" width="5" height="4" depth="5" color="#4CC3D9"></a-box>
+
+      <!-- สร้างประตู -->
+      <a-box position="0 2 -7.5" width="2" height="4" depth="0.2" color="#FFC65D"></a-box>
+      <a-box position="0 2 0" width="2" height="4" depth="0.2" color="#FFC65D" rotation="0 180 0"></a-box>
+
+      <!-- สร้างหลอดไฟ -->
+      <a-light type="ambient" color="#888"></a-light>
+      <a-light type="point" position="0 5 -5" intensity="0.5" distance="20" decay="1" color="#FFF"></a-light>
+
+      <!-- เพิ่ม controller เพื่อทดสอบในโหมด VR -->
+      <a-entity laser-controls="hand: right"></a-entity>
+      <a-entity laser-controls="hand: left"></a-entity>
+    
 
       <a-assets>
         <img src="assets/play.png" id="play" crossorigin="anonymous">
