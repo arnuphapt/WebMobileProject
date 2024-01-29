@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Grid Demo Web</title>
+  <title>Dinosaur museum</title>
   <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
   <script
@@ -44,10 +44,10 @@
      <!-- วิดีโอเเละการจัดเเสง -->
     <a-light position="0 5 0" type="directional" intensity="0.5" cast-shadow="true"></a-light>
     <a-light position="0 0 10" type="directional" intensity="0.75" cast-shadow="true"></a-light>
-    <a-video src="assets/ทีเร๊ก.mp4" position="0.9 1 -10" width="2" height="1" loop muted></a-video>
+    <a-video src="assets/ทีเร๊ก.mp4" position="0 1 -10" width="2" height="1" loop muted></a-video>
     <a-video src="assets/สไปโน.mp4" position="-5 1 -10" width="2" height="1" loop muted></a-video>
     <a-video src="assets/pter.mp4" position="-11 1 -10" width="2" height="1" loop muted></a-video>
-    <a-video src="assets/-เขา.mp4" position="6 1 -10" width="2" height="1" loop muted></a-video>
+    <a-video src="assets/-เขา.mp4" position="5 1 -10" width="2" height="1" loop muted></a-video>
     <a-video src="assets/แร็ปเตอร์.mp4" position="11 1 -10" width="2" height="1" loop muted></a-video>
 
     <!-- สร้างพื้นหลังสีเทา -->
@@ -60,21 +60,28 @@
     <!-- ฐานSpino -->
     <a-box position="-5 0 -14" width="3" height="1.5" depth="6" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
     <!-- ฐานT-rex -->
-    <a-box position="1 0 -14" width="3" height="1.5" depth="6" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
+    <a-box position="0 0 -14" width="3" height="1.5" depth="6" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
      <!-- ฐานTri-->
-    <a-box position="6 0 -14" width="3" height="1.5" depth="6" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
+    <a-box position="5 0 -14" width="3" height="1.5" depth="6" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
     <!-- ฐานRaptor-->
     <a-box position="11 0 -14" width="3" height="1.5" depth="6" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
     <!-- ฐาน-->
     <a-box position="0 0 0" width="3" height="1.5" depth="3" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
-
+    <!-- ฐาน-->
+    <a-box position="5 0 0" width="3" height="1.5" depth="3" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
+    <!-- ฐาน-->
+    <a-box position="11 0 0" width="3" height="1.5" depth="3" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
+    <!-- ฐาน-->
+    <a-box position="-11 0 0" width="3" height="1.5" depth="3" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
+    <!-- ฐาน-->
+    <a-box position="-5 0 0" width="3" height="1.5" depth="3" src="assets/img/Wall_Stone_023_BaseColor.jpg" repeat="3 3"></a-box>
 
 
     <!-- กำแพงล้อมรอบห้อง -->
-    <a-box position="-15 2 0" width="1" height="6" depth="50" color="#59626b	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
-    <a-box position="15 2 0" width="1" height="6" depth="50" color="#59626b	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
-    <a-box position="0 2 5" width="50" height="6" depth="1" color="#59626b	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
-    <a-box position="0 2 -15" width="50" height="6" depth="1" color="#59626b	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
+    <a-box position="-15 2 0" width="1" height="7" depth="50" color="#59626b	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
+    <a-box position="15 2 0" width="1" height="7" depth="50" color="#59626b	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
+    <a-box position="0 2 5" width="50" height="7" depth="1" color="#59626b	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
+    <a-box position="0 2 -15" width="50" height="7" depth="1" color="#59626b	" src="assets/img/Brick_Wall_015_DISP.png" repeat="15"></a-box>
 
 
     <a-assets>
@@ -117,7 +124,7 @@
       rotation="100 100 100">
     </a-entity>
 <!--Modelทีเร๊ก-->
-    <a-entity id="dino2" gltf-model="assets/model/source/dinosaur_fbx.glb" scale="4 4 4 " position="-0.1 0 -14"
+    <a-entity id="dino2" gltf-model="assets/model/source/dinosaur_fbx.glb" scale="4 4 4 " position="-1.5 0 -14"
       rotation="0 30 0">
     </a-entity>
 <!--Modelสไปโน-->
@@ -135,20 +142,153 @@ rotation="0 0 0">
 rotation="0 180 0">
 </a-entity>
   
+<!--Modelดูก-->
+<a-entity id="dino5" gltf-model="assets/model/source/utahraptor_skeleton.glb" scale="0.01 0.01 0.01" position="5 -1 0"
+rotation="0 180 0">
+</a-entity>
+
 <!--Modelท็อป-->
-<a-entity id="dino5" gltf-model="assets/model/source/triceratops.glb" scale="0.7 0.7 0.7" position="6 -1 -13"
+<a-entity id="dino5" gltf-model="assets/model/source/triceratops.glb" scale="0.7 0.7 0.7" position="5 -1 -13"
 rotation="0 0 0">
+</a-entity>
+
+<!--Modelแท่น-->
+<a-entity id="dino5" gltf-model="assets/model/source/marble_altar.glb" scale="1 1 1" position="13 -0.8 -4"
+rotation="0 90 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/marble_altar.glb" scale="1 1 1" position="13 -0.8 -8"
+rotation="0 90 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/marble_altar.glb" scale="1 1 1" position="-13 -0.8 -4"
+rotation="0 90 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/marble_altar.glb" scale="1 1 1" position="-13 -0.8 -8"
+rotation="0 90 0">
+</a-entity>
+
+<!--Modelวัตถุโบราณ-->
+<a-entity id="dino5" gltf-model="assets/model/source/chinese_artifact_01.glb" scale="0.07 0.07 0.07" position="13 -2 -4"
+rotation="0 90 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/clay_artifact_3d_scan.glb" scale="15 15 15" position="13 -0.1 -8"
+rotation="0 90 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/cyan_artifact.glb" scale="0.1 0.1 0.1" position="-13 -0.1 -4"
+rotation="0 90 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/goblin_artifact.glb" scale="0.002 0.002 0.002" position="-13 -0.1 -8"
+rotation="0 90 0">
+</a-entity>
+
+<!--Modelคน-->
+<a-entity id="dino5" gltf-model="assets/model/source/man_in_suit.glb" scale="0.01 0.01 0.01" position="0 -1.36 -3"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/man_in_suit.glb" scale="0.01 0.01 0.01" position="4 -1.36 -5"
+rotation="0 180 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/fhc_crying_child.glb" scale="1 1 1" position="4 -1.36 -8"
+rotation="0 180 0">
 </a-entity>
 
 <!--Modelเสาร์-->
 <a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="13.8 -1.4 -14"
 rotation="0 0 0">
 </a-entity>
-<!--Modelเสาร์-->
-<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-20 -1.4 -14"
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-8 -1.4 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-2 -1.4 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="2 -1.4 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="8 -1.4 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-14 -1.4 -14"
 rotation="0 0 0">
 </a-entity>
 
+
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-14 -1.4 -10"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-14 -1.4 -6"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-14 -1.4 -2"
+rotation="0 0 0">
+</a-entity>
+
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="14 -1.4 -10"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="14 -1.4 -6"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="14 -1.4 -2"
+rotation="0 0 0">
+</a-entity>
+
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="13.8 1 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="-8 1 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="-2 1 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="2 1 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="8 1 -14"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="-14 1 -14"
+rotation="0 0 0">
+</a-entity>
+
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="13.8 -1.4 4"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-8 -1.4 4"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-2 -1.4 4"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="2 -1.4 4"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="8 -1.4 4"
+rotation="0 0 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/ancient_column.glb" scale="2 0.9 2" position="-14 -1.4 4"
+rotation="0 0 0">
+</a-entity>
+
+
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="13.8 1 4"
+rotation="0 180 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="-8 1 4"
+rotation="0 180 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="-2 1 4"
+rotation="0 180 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="2 1 4"
+rotation="0 180 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="8 1 4"
+rotation="0 180 0">
+</a-entity>
+<a-entity id="dino5" gltf-model="assets/model/source/torch.glb" scale="2 0.9 2" position="-14 1 4"
+rotation="0 180 0">
+</a-entity>
 
     <!-- PROGRESSBAR -->
     <a-entity id="progress-bar" geometry="primitive: plane; width: 4; height: 0.06;"
