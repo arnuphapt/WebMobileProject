@@ -41,6 +41,18 @@
 
   <a-scene>
 
+    <a-assets>
+      <img id="man" src="assets/img/bas.jpg">
+      <img id="man2" src="assets/img/oak.jpg">
+      <img id="man3" src="assets/img/oui.jpg">
+    </a-assets>
+
+    <a-box position="0 3 5" width="2" height="1" animation="property: position; to: 0 4 -10; dur: 2000; easing: linear" animation__2="property: rotation;; to: 0 360 0; dur: 5000; loop: true;" src="#man" material="" geometry=""></a-box>
+    <a-box position="0 3 10" width="2" height="1" animation="property: position; to: 0 4 -5; dur: 2000; easing: linear" animation__2="property: rotation;; to: 0 360 0; dur: 5000; loop: true;" src="#man2" material="" geometry=""></a-box>
+    <a-box position="0 3 15" width="2" height="1" animation="property: position; to: 0 4 0; dur: 2000; easing: linear" animation__2="property: rotation;; to: 0 360 0; dur: 5000; loop: true;" src="#man3" material="" geometry=""></a-box>
+
+
+
      <!-- วิดีโอเเละการจัดเเสง -->
     <a-light position="0 5 0" type="directional" intensity="0.5" cast-shadow="true"></a-light>
     <a-light position="0 0 10" type="directional" intensity="0.75" cast-shadow="true"></a-light>
